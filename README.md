@@ -6,6 +6,8 @@ Pass in a string, get a buffer back. Pass in a buffer, get the same buffer back.
 npm install to-buffer
 ```
 
+[![build status](https://travis-ci.org/mafintosh/to-buffer.svg?branch=master)](https://travis-ci.org/mafintosh/to-buffer)
+
 ## Usage
 
 ``` js
