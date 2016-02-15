@@ -1,7 +1,7 @@
 {
   "name": "to-buffer",
   "version": "1.0.0",
-  "description": "WIP - nothing to see here",
+  "description": "Pass in a string, get a buffer back. Pass in a buffer, get the same buffer back",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
