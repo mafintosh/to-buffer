@@ -1,18 +1,19 @@
 var tape = require('tape')
 var toBuffer = require('./')
+var bufferFrom = require('buffer-from')
 
 tape('buffer returns buffer', function (t) {
-  t.same(toBuffer(Buffer('hi')), Buffer('hi'))
+  t.same(toBuffer(bufferFrom('hi')), bufferFrom('hi'))
   t.end()
 })
 
 tape('string returns buffer', function (t) {
-  t.same(toBuffer('hi'), Buffer('hi'))
+  t.same(toBuffer('hi'), bufferFrom('hi'))
   t.end()
 })
 
 tape('string + enc returns buffer', function (t) {
-  t.same(toBuffer('6869', 'hex'), Buffer('hi'))
+  t.same(toBuffer('6869', 'hex'), bufferFrom('hi'))
   t.end()
 })
 
